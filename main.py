@@ -13,7 +13,7 @@ df = df.dropna()
 # Create input and output datasets
 X = df[input_features]
 y = df[output_feature]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 scaler = MinMaxScaler()
 X_scaled = scaler.fit_transform(X) 

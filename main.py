@@ -3,10 +3,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
+
 df = pd.read_csv('parkinsons.csv')
 
 input_features = ['DFA', 'PPE']
-output_feature = 'status'
+output_feature = ['status']
 
 df = df.dropna()
 
